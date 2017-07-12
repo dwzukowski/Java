@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title> Pets </title>
+</head>
+<body>
+    <h1> Dog </h1>
+    <form action='/' method='get'>
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="breed" placeholder="breed">
+        <input type="text" name="weight" placeholder="weight">
+        <input type='submit' value='Submit'>
+    </form>
+    <h1> Cat </h1>
+    <form action='/' method='get'>
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="breed" placeholder="breed">
+        <input type="text" name="weight" placeholder="weight">
+        <input type='submit' value='Submit'>
+    </form>
+</body>
+</html>

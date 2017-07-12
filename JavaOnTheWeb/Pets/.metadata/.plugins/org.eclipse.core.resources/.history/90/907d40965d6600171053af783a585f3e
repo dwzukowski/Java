@@ -1,0 +1,5 @@
+package com.dave.pets.models;
+
+public class Animal {
+
+}

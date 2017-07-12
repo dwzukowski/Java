@@ -1,0 +1,19 @@
+<? xml version="1.0" encoding="UTF-8">
+<pets>
+  <servlet>
+    <servlet-name>ShowPerson</servlet-name>
+    <servlet-class>com.codingdojo.controllers.ShowPerson</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowPerson</servlet-name>
+    <url-pattern>/greetperson</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShowPet</servlet-name>
+    <servlet-class>com.codingdojo.controllers.ShowPet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowPet</servlet-name>
+    <url-pattern>/pet</url-pattern>
+  </servlet-mapping>
+</pets> 

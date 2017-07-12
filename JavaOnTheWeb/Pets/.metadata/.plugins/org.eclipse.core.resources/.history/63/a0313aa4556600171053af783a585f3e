@@ -1,0 +1,11 @@
+<? xml version="1.0" encoding="UTF-8">
+<pets>
+  <servlet>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.dave.controllers.Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+ 	<url-pattern>/</url-pattern>
+ </servlet-mapping>
+</pets> 

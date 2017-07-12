@@ -1,0 +1,59 @@
+package com.dave.pets.models;
+
+public class Animal implements Pet {
+	private String name;
+	private String breed;
+	private String weight;
+	
+	public Animal(){
+		
+	}
+	public Animal(String name, String breed, String weight){
+		this.name = name;
+		this.breed = breed;
+		this.weight = weight;
+	}
+	public String showAffection(){
+		String action = "test";
+		if(getBreed() == "cat" || getBreed() == "Cat"){
+			action = "looks at you";
+			return action; 
+		}
+		else if(this.getBreed() == "dog" || this.getBreed() == "Dog"){
+			int weight = Integer.parseInt(this.getWeight());
+			if(weight < 30){
+				action = "hops in lap";
+				return action; 
+			}
+			else{
+				action = "curls up";
+				return action; 
+			}
+		}
+		return action; 
+	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBreed() {
+		return breed;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+
+	public String getWeight() {
+		return weight;
+	}
+
+	public void setWeight(String weight) {
+		this.weight = weight;
+	}
+
+}

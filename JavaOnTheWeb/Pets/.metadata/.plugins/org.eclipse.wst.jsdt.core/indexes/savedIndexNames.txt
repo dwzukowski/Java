@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+C:\Users\dwzuk\Desktop\Hello World\Week8a\Pets\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+6960898.index
+1074687804.index
+1167876421.index
+2925023525.index
+1327198150.index
+1016025034.index
+3853833119.index
