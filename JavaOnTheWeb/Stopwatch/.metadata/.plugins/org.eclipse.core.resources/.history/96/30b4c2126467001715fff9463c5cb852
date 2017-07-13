@@ -1,0 +1,40 @@
+package com.dave.stopwatch.models;
+
+import java.time.Duration;
+import java.time.LocalTime;
+
+
+public class Watch {
+	private LocalTime startTime;
+	private LocalTime endTime;
+	public Watch(){
+		setStartTime(LocalTime.now());
+	}
+	public LocalTime getStartTime() {
+		return startTime;
+	}
+	public void setStartTime(LocalTime startTime) {
+		this.startTime = startTime;
+	}
+	public LocalTime getEndTime() {
+		return endTime;
+	}
+	public void setEndTime(LocalTime endTime) {
+		this.endTime = endTime;
+	}
+	//returns a Duration object, computes time elapsed. Can then use .toNanos() or another Duration method to convert to relevant units
+	public Duration computeDuration(){
+		Duration result = Duration.between(getStartTime(), getEndTime());
+		return result; 
+	}
+	public String runtime(){
+		Duration duration = Duration.between(getStartTime(), LocalTime.now());
+		long seconds = duration.getSeconds();
+		long minutes = (long)Math.floor(seconds / 60);
+		long displaySeconds = seconds % 60;
+		String timeString = String.format("%02d:%02d", minutes, displaySeconds);
+		return timeString;
+
+	}
+	
+}
